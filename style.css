@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #111827; */
+}
+
+#flex {
+    display: flex;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #111827;
+}
+
+.navbar {
+    width: 100%;
+    height: 40px;
+    background-color: #111827;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+.navbar ul .home {
+    background: blue;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.navbar img {
+    width: 100px;
+    display: none;
+}
+
+/* Section-1 */
+
+.section-cont {
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.left img {
+    width: 30px;
+}
+
+.left span {
+    color: goldenrod;
+}
+
+.left h3 {
+    padding-left: 10px;
+}
+
+.right {
+    padding-left: 20px;
+}
+
+.right img {
+    width: 200px;
+}
+
+/* section-2 */
+
+#section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.title h1 {
+    color: #b8b4b4;
+    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.main p {
+    text-align: center;
+    color: #d8d0d0;
+    font-size: 12px;
+}
+
+#section-2 img {
+    width: 125px;
+}
+
+.upper img{
+    padding-right: 10px;
+}
+.lower img{
+    padding-right: 10px;
+}
+
+/* Footer */
+#footer {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-title h2 {
+    color: white;
+    padding-top: 10px;
+}
+
+.underline {
+    width: 7.5rem;
+    height: 4px;
+    background: blue;
+    border-radius: 5px;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 576px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: #111827;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar .hambrger img{
+        display: block;
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .section-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .left{
+        text-align: center;
+    }
+    .right{
+        margin-top: 10px;
+    }
+    /* section2 */
+    .upper, .lower{
+        flex-direction: column;
+    }
+    #section-2{
+        margin-top: 50px;
+    }
+    .main img{
+        margin-top: 20px;
+    }
+    #section-2 img{
+        width: 10rem;
+    }
+    /* Footer */
+    .footer-title{
+        font-size: 12px;
+        text-align: center;
+    }
+    .underline{
+        width: 5.7rem;
+    }
+    .icons img{
+        width: 15px;
+    }
+}
